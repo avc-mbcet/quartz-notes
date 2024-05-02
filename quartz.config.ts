@@ -58,26 +58,13 @@ const config: QuartzConfig = {
 			Plugin.Latex({ renderEngine: "katex" }),
 			Plugin.SyntaxHighlighting({
 				theme: {
-					light: "nord",
-					dark: "nord",
+					light: "github-light",
+					dark: "github-dark",
 				},
 				keepBackground: false,
 			}),
-			// Plugin.GitHubFlavoredMarkdown(),
-			Plugin.ObsidianFlavoredMarkdown({
-				comments: false,
-				highlight: true,
-				wikilinks: false,
-				callouts: true,
-				mermaid: true,
-				parseTags: true,
-				parseArrows: false,
-				parseBlockReferences: true,
-				enableInHtmlEmbed: false,
-				enableYouTubeEmbed: true,
-				enableVideoEmbed: true,
-				enableCheckbox: true
-			}),
+			Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+			Plugin.GitHubFlavoredMarkdown(),
 			Plugin.TableOfContents(),
 			Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
 			Plugin.Description(),
@@ -97,7 +84,7 @@ const config: QuartzConfig = {
 			Plugin.Static(),
 			Plugin.NotFoundPage(),
 		],
-	},
+	},,
 }
 
 export default config
