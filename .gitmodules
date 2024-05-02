@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/avc-mbcet/md-notes
