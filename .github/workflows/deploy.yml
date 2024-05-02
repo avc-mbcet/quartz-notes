@@ -22,7 +22,6 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for git info
           submodules: 'recursive' # Include submodules
-          token: ${{ secrets.YOUR_TOKEN }} # Use your GitHub token here
       - uses: actions/setup-node@v3
         with:
           node-version: 18.14
