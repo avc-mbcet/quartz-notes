@@ -36,13 +36,13 @@ const config: QuartzConfig = {
 					highlight: "rgba(143, 159, 169, 0.15)",
 				},
 				darkMode: {
-					light: "#333333", // nord4
-					lightgray: "#4c566a", // nord5
-					gray: "#6684b8", // nord6
-					darkgray: "#a8c6d0", // nord7
-					dark: "#ececec", // nord0
-					secondary: "#88c0d0", // nord8
-					tertiary: "#d8dee9", // nord12
+					light: "#2e3440", // nord4
+					lightgray: "#434c5e", // nord5
+					gray: "#4c566a", // nord6
+					darkgray: "#eceff4", // nord7
+					dark: "#d8dee9", // nord0
+					secondary: "#81a1c1", // nord8
+					tertiary: "#5e81ac", // nord12
 					highlight: "rgba(143, 159, 169, 0.15)",
 				},
 
@@ -77,7 +77,7 @@ const config: QuartzConfig = {
 				enableVideoEmbed: true,
 				enableCheckbox: true
 			}),
-			// Plugin.GitHubFlavoredMarkdown(),
+			Plugin.GitHubFlavoredMarkdown(),
 			Plugin.TableOfContents(),
 			Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
 			// Plugin.Description(),
