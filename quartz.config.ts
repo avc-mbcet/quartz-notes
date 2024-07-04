@@ -20,8 +20,8 @@ const config: QuartzConfig = {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
 			typography: {
-				header: "Noto Serif",
-				body: "Noto Serif",
+				header: "Inter",
+				body: "Inter",
 				code: "JetBrains Mono",
 			},
 			colors: {
